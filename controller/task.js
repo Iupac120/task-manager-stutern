@@ -44,7 +44,7 @@ const deleteTask = async(req,res)=>{
     if(!task){
         return next(createCustomError(`No task with id:${userId}`,404))
     }
-    res.status(201).json({task})
+    res.status(201).json({msg:`The task with ${userId} has been deleted`})
 }
 
 
